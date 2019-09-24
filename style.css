@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Asap";
+    src: url("/resources/fonts/Asap-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lucida Sans Italic";
+    src: url("/resources/fonts/Lucida Sans Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/resources/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("/resources/fonts/PTS55F.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url("/resources/fonts/PTN77F.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url("/resources/fonts/SegoeUI-light.ttf") format("truetype"),
+    url("/resources/fonts/SegoeUI-light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("/resources/fonts/SegoeUI-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe WP Light";
+    src: url("/resources/fonts/segoe-wp-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe WP";
+    src: url("/resources/fonts/SegoeWP.ttf") format("truetype"),
+    url("/resources/fonts/SegoeWP.woff") format("woff");
+}
+
+
+
+
