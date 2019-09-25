@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Asap";
     src: url("/resources/fonts/Asap-Regular.otf") format("opentype");
+    font-style: normal;
 }
 
 @font-face {
@@ -12,38 +13,45 @@
 @font-face {
     font-family: "Open Sans";
     src: url("/resources/fonts/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "PT Sans";
     src: url("/resources/fonts/PTS55F.ttf") format("truetype");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "PT Sans Narrow Bold";
     src: url("/resources/fonts/PTN77F.ttf") format("truetype");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe UI Light";
     src: url("/resources/fonts/SegoeUI-light.ttf") format("truetype"),
     url("/resources/fonts/SegoeUI-light.woff") format("woff");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe UI Bold";
     src: url("/resources/fonts/SegoeUI-Bold.ttf") format("truetype");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe WP Light";
     src: url("/resources/fonts/segoe-wp-light.ttf") format("truetype");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe WP";
     src: url("/resources/fonts/SegoeWP.ttf") format("truetype"),
     url("/resources/fonts/SegoeWP.woff") format("woff");
+    font-style: normal;
 }
 
 * {
@@ -55,6 +63,7 @@ h1,
 h2,
 h3,
 a,
+figcaption,
 .design,
 .customise,
 .free,
@@ -74,11 +83,31 @@ body {
 }
 
 header {
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 1300px;
     height: 566px;
-    background-image: url(./resources/image/header-bg.png);
-    background-repeat: no-repeat;
+}
+
+.header-pattern {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.header-pattern:after {
+    content: '';
+    display: block;
+    background: url(./resources/image/header-pattern.png) repeat;
+    background-size: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    pointer-events: none;
 }
 
 .logo-container-header {
@@ -203,11 +232,11 @@ nav.menu {
 }
 
 .arrow-right img {
-    margin: 19px 11px 19px 8px;
+    margin: 19px 8px 19px 11px;
 }
 
 .arrow-left img {
-    margin: 19px 8px 19px 11px;
+    margin: 19px 8px 19px 8px;
 }
 
 figure.player  {
@@ -218,10 +247,316 @@ figure.player  {
     height: 327px;
     background-image: url(./resources/image/player-shot.png);
     background-repeat: no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+    opacity: .7;
 }
 
 .play-big {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    top: 130px;
+    left: 241px;
+    width: 67px;
+    height: 67px;
 }
+
+.play-big .play-ellipse-big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.play-big .play-big-triangle {
+    position: absolute;
+    top: 17px;
+    left: 27px;
+    right: 21px;
+    bottom: 16px;
+    z-index: 15;
+}
+
+.play-small {
+    position: relative;
+    top: 211px;
+    left: 29px;
+    width: 27px;
+    height: 27px;
+
+}
+
+.play-small .play-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.play-small .play-triangle {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 10px;
+    right: 7px;
+    z-index: 25;
+}
+
+div.timelapse {
+    position: relative;
+    top: 192px;
+    left: 81px;
+}
+
+div.timelapse .timelaps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+div.timelapse .timelaps-checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 35;
+}
+
+.volume {
+    position: relative;
+    top: 191px;
+    left: 515px;
+    z-index: 40;
+}
+
+.title-header {
+    position: relative;
+    top: 166px;
+    left: 747px;
+    width: 394px;
+    text-align: center;
+
+}
+
+.title-header .title-yellow {
+    color: #f5c506;
+    font: normal 63px "Asap";
+    letter-spacing: 10%;
+    line-height: 1;
+}
+
+.title-header .title-white {
+    color: #ffffff;
+    font: normal 63px "Asap";
+    letter-spacing: 10%;
+    line-height: 1.3;
+    padding-left: 1px;
+}
+
+main {
+    position: relative;
+    height: 1217px;
+}
+
+.main-pattern {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.main-pattern img {
+    box-shadow:
+            0px 10px 8px -10px rgba(0,0,0,0.5),
+            0px 10px 8px -10px rgba(0,0,0,0.5);
+}
+
+.main-section {
+
+    height: 213px;
+    width: 100%;
+}
+
+.main-section ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin: auto 139px;
+}
+
+.main-section ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.main-section ul li figure.main-nav {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+}
+
+.main-section ul li:nth-child(1) figure.main-nav img {
+    padding: 62px 2px 0 0;
+}
+
+.main-section ul li:nth-child(2) figure.main-nav img {
+    padding: 37px 0px 0 27px;
+}
+
+.main-section ul li:nth-child(3) figure.main-nav img {
+    padding: 55px 22px 0 0;
+}
+
+.main-section ul li figure.main-nav figcaption {
+    font: normal 27px "Segoe UI Light";
+    padding: 0px 0px 31px 21px;
+    letter-spacing: 10%;
+}
+
+.main-section ul li:nth-child(3) figure.main-nav figcaption {
+    padding: 0 16px 31px 0px;
+}
+
+.materials {
+    height: 508px;
+    width: 100%;
+    background-image: url(./resources/image/materials-bg.png);
+}
+
+.materials h3 {
+    padding: 31px 140px 20px 140px;
+    text-align: left;
+    letter-spacing: .4px;
+    font: normal 37px "PT Sans";
+    color: #ffffff;
+}
+
+.materials .text-section {
+    float: left;
+    margin: 10px 0 0 140px;
+    width: 341px;
+    height: 312px;
+}
+
+.materials .text-section .text-section-container {
+    background: #ec9e03;
+    width: 100%;
+    height: 233px;
+}
+
+.materials .text-section .text-section-container p {
+    padding: 17px 32px;
+    font: normal 27px "Segoe WP Light";
+    letter-spacing: 1.1px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.materials .text-section .text-section-container img {
+    position: relative;
+    bottom: 17px;
+    left: 315px;
+}
+
+.materials .text-section .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ddb101;
+    width: 113px;
+    height: 86px;
+}
+
+.materials .text-section .calendar h2 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 55px;
+    font-family: "Segoe UI Bold", monospace;
+    height: 56px;
+    margin: 0px 0px -3px 5px;
+    color: #ffffff;
+
+}
+
+.materials .text-section .calendar p {
+    font: normal 21px "Segoe UI";
+    height: 22px;
+    text-transform: uppercase;
+    color: #b26529;
+    padding: 0px 0px 0px 7px;
+}
+
+.materials figure {
+    position: relative;
+    float: left;
+    margin: 10px 0px 0px 0px;
+}
+
+.video-player {
+    position: absolute;
+    top: 93px;
+    left: 129px;
+    width: 61px;
+    height: 61px;
+}
+
+.video-player img{
+    position: absolute;
+}
+
+.video-player img:last-child{
+    top: 15px;
+    left: 25px;
+}
+
+.twitter-body {
+    position: relative;
+    float: right;
+    margin: 10px 142px 0 0px;
+    width: 329px;
+    height: 233px;
+    background: #ec9e03;
+}
+
+.twitter-body p {
+    position: absolute;
+    top: 11px;
+    right: 17px;
+    font: normal 25px "Segoe WP Light";
+    color: #ffffff;
+}
+
+.twitter-body img.twitter {
+    position: absolute;
+    top: 59px;
+    left: 83px;
+}
+
+.twitter-body img:last-child {
+    position: absolute;
+    bottom: 13px;
+    right: 9px;
+}
+
+.materials figure.scroll {
+    position: relative;
+}
+
+.materials figure img.mat-scroll {
+    position: relative;
+    top: 41px;
+    left: 211px;
+}
+
+.materials figure img:last-child {
+    position: absolute;
+    top: 41px;
+    left: 458px;
+}
+
+.responsive {
+    height: 498px;
+    width: 100%;
+}
+

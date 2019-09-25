@@ -7,6 +7,9 @@
 </head>
 <body>
     <header>
+        <div class="header-pattern">
+            <img src="./resources/image/header-bg.png" alt="" class="header-bg">
+        </div>
         <div class="logo-container-header">
             <img src="./resources/image/logo.png" alt="" class="logo">
             <img src="./resources/image/logo45.png" alt="" class="logo-45">
@@ -29,8 +32,8 @@
                 <img src="./resources/image/triangle-player-big-play.png" alt="" class="play-big-triangle">
             </div>
             <div class="play-small">
-                <img src="./resources/image/rectangle-player-play.png" alt="" class="play-ellipse">
-                <img src="./resources/image/triangle-player-play.png" alt="" class="play">
+                <img src="./resources/image/rectangle-player-play.png" alt="" class="play-rectangle">
+                <img src="./resources/image/triangle-player-play.png" alt="" class="play-triangle">
             </div>
             <div class="timelapse">
                 <img src="./resources/image/rectangle-player-timelapse.png" alt="" class="timelaps">
@@ -38,8 +41,10 @@
             </div>
             <img src="./resources/image/player-volume.png" alt="" class="volume">
         </figure>
-        <h1 class="title-yellow">The cool</h1>
-        <h1 class="title-white">The minimal</h1>
+        <div class="title-header">
+            <h1 class="title-yellow">The cool</h1>
+            <h1 class="title-white">The minimal</h1>
+        </div>
         <div class="arrow">
             <div class="arrow-left">
                 <img src="./resources/image/control-left.png" alt="" class="arrow-left-small">
@@ -51,30 +56,61 @@
     </header>
     <main>
         <section class="main-section">
-            <nav>
-                <li class="main-nav"><img src="" alt="" class="design">Better design</li>
-                <li class="main-nav"><img src="" alt="" class="customise">Customise</li>
-                <li class="main-nav"><img src="" alt="" class="free">Its free</li>
-            </nav>
+            <div class="main-pattern">
+                <img src="./resources/image/main-bg.png" alt="" class="main-bg">
+            </div>
+            <ul>
+                <li>
+                    <figure class="main-nav">
+                    <img src="./resources/image/main-design.png" alt="" class="design">
+                    <figcaption>Better design</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="main-nav">
+                    <img src="./resources/image/main-custom.png" alt="" class="customise">
+                    <figcaption>Customise</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="main-nav">
+                    <img src="./resources/image/main-free.png" alt="" class="free">
+                    <figcaption>Its free</figcaption>
+                    </figure>
+                </li>
+            </ul>
         </section>
         <section class="materials">
             <h3 class="title-materials">lorem ipsum dolor sit amet</h3>
             <article class="text-section">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut</p>
-                <img src="" alt="" class="plus">
-                <div class="calendar">
-                    <h2 class="date">25</h2>
-                    <p class="month">april</p>
-                </div>
-            </article>
+                    <div class="text-section-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut</p>
+                        <img src="./resources/image/plus.png" alt="">
+                    </div>
+                    <div class="calendar">
+                        <h2>25</h2>
+                        <p>april</p>
+                    </div>
+                </article>
             <article class="video">
-                <figure><img src="" alt=""></figure>
+                <figure>
+                    <img src="./resources/image/video-shot.png" alt="">
+                    <div class="video-player">
+                        <img src="./resources/image/video-player-ellipse.png" alt="">
+                        <img src="./resources/image/video-player-triangle.png" alt="">
+                    </div>
+                </figure>
             </article>
-            <article class="tweeter-body">
+            <article class="twitter-body">
                 <p>22</p>
-                <img src="" alt="" class="plus">
+                <img src="./resources/image/twitter.png" alt="" class="twitter">
+                <img src="./resources/image/plus.png" alt="">
             </article>
+            <figure class="scroll">
+                <img src="./resources/image/materials-scroll.png" alt="" class="mat-scroll">
+                <img src="./resources/image/materials-scroll1.png" alt="">
+            </figure>
         </section>
         <section class="responsive">
             <h3 class="title-responsive">Lorem ipsum dolor sit amet</h3>
