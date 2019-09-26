@@ -194,6 +194,13 @@ nav.menu {
     font-stretch: 10%;
     text-decoration: none;
     color: #9b7d08;
+    transition: all 300ms ease;
+}
+
+.menu ul li a:hover {
+    background: #ffffff;
+    box-shadow: 0 0 10px #f5c506 inset;
+    color: #f5c506;
 }
 
 .menu ul li:first-child  a{
@@ -226,6 +233,7 @@ nav.menu {
     background: #c4a30a;
     width: 32px;
     height: 57px;
+    transition: all 300ms ease;
 }
 
 .arrow-left:hover,
@@ -240,6 +248,7 @@ nav.menu {
     background: #c4a30a;
     width: 32px;
     height: 57px;
+    transition: all 300ms ease;
 }
 
 .arrow-right img {
@@ -348,8 +357,13 @@ main {
     align-items: center;
     text-decoration: none;
     color: #000000;
+    transition: all 300ms ease;
     z-index: 4;
 }
+
+.main-section a:hover {
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: 0 0 15px #f5c506 inset;
 }
 
 .main-section ul li:nth-child(1) figure.main-nav a img {
@@ -415,8 +429,13 @@ main {
     position: relative;
     bottom: 17px;
     left: 315px;
+    transition: all .75s ease-out;
+    z-index: 30;
 }
 
+.materials .text-section .text-section-container img:hover {
+    filter: brightness(1.1);
+    transform: rotate(360deg);
 }
 
 .materials .text-section .calendar {
@@ -483,11 +502,13 @@ main {
     position: absolute;
     bottom: 13px;
     right: 9px;
+    transition: all .75s ease-out;
     z-index: 4;
 }
 
-.materials figure.scroll {
-    position: relative;
+.twitter-body img.plus-twitter:hover {
+    filter: brightness(1.1);
+    transform: rotate(360deg);
 }
 
 .materials figure.scroll {
