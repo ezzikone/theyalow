@@ -305,7 +305,6 @@ main {
 }
 
 .main-section {
-
     height: 213px;
     width: 100%;
 }
@@ -315,40 +314,62 @@ main {
     justify-content: space-around;
     height: 100%;
     margin: auto 139px;
+    z-index: 1;
 }
 
 .main-section ul li {
     width: 100%;
     height: 100%;
+    z-index: 2;
+}
+
+.main-section ul li:nth-child(1) {
+    border-left: 1px solid rgba( 0, 0, 0, .14);
+    border-right: 1px solid rgba( 0, 0, 0, .14);
+}
+
+.main-section ul li:nth-child(3) {
+    border-left: 1px solid rgba( 0, 0, 0, .14);
+    border-right: 1px solid rgba( 0, 0, 0, .14);
 }
 
 .main-section ul li figure.main-nav {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.main-section ul li figure.main-nav a {
     display: flex;
     height: 100%;
+    border-collapse: collapse;
     justify-content: space-between;
     flex-flow: column;
     align-items: center;
+    text-decoration: none;
+    color: #000000;
+    z-index: 4;
+}
 }
 
-.main-section ul li:nth-child(1) figure.main-nav img {
+.main-section ul li:nth-child(1) figure.main-nav a img {
     padding: 62px 2px 0 0;
 }
 
-.main-section ul li:nth-child(2) figure.main-nav img {
+.main-section ul li:nth-child(2) figure.main-nav a img {
     padding: 37px 0px 0 27px;
 }
 
-.main-section ul li:nth-child(3) figure.main-nav img {
+.main-section ul li:nth-child(3) figure.main-nav a img {
     padding: 55px 22px 0 0;
 }
 
-.main-section ul li figure.main-nav figcaption {
+.main-section ul li figure.main-nav a figcaption {
     font: normal 27px "Segoe UI Light";
-    padding: 0px 0px 31px 21px;
-    letter-spacing: 10%;
+    padding: 0px 0px 33px 19px;
 }
 
-.main-section ul li:nth-child(3) figure.main-nav figcaption {
+.main-section ul li:nth-child(3) figure.main-nav a figcaption {
     padding: 0 16px 31px 0px;
 }
 
@@ -371,12 +392,14 @@ main {
     margin: 10px 0 0 140px;
     width: 341px;
     height: 312px;
+    z-index: 15;
 }
 
 .materials .text-section .text-section-container {
     background: #ec9e03;
     width: 100%;
     height: 233px;
+    z-index: 20;
 }
 
 .materials .text-section .text-section-container p {
@@ -385,12 +408,15 @@ main {
     letter-spacing: 1.1px;
     line-height: 1.4;
     color: #ffffff;
+    z-index: 25;
 }
 
 .materials .text-section .text-section-container img {
     position: relative;
     bottom: 17px;
     left: 315px;
+}
+
 }
 
 .materials .text-section .calendar {
@@ -421,27 +447,10 @@ main {
     padding: 0px 0px 0px 7px;
 }
 
-.materials figure {
+.materials video {
     position: relative;
     float: left;
     margin: 10px 0px 0px 0px;
-}
-
-.video-player {
-    position: absolute;
-    top: 93px;
-    left: 129px;
-    width: 61px;
-    height: 61px;
-}
-
-.video-player img{
-    position: absolute;
-}
-
-.video-player img:last-child{
-    top: 15px;
-    left: 25px;
 }
 
 .twitter-body {
@@ -451,41 +460,48 @@ main {
     width: 329px;
     height: 233px;
     background: #ec9e03;
+    z-index: 1;
 }
 
-.twitter-body p {
+.twitter-body figcaption {
     position: absolute;
     top: 11px;
     right: 17px;
     font: normal 25px "Segoe WP Light";
     color: #ffffff;
+    z-index: 2;
 }
 
 .twitter-body img.twitter {
     position: absolute;
     top: 59px;
     left: 83px;
+    z-index: 3;
 }
 
-.twitter-body img:last-child {
+.twitter-body img.plus-twitter {
     position: absolute;
     bottom: 13px;
     right: 9px;
+    z-index: 4;
 }
 
 .materials figure.scroll {
     position: relative;
 }
 
-.materials figure img.mat-scroll {
+.materials figure.scroll {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
     top: 41px;
-    left: 211px;
+    width: 100%;
 }
 
 .materials figure img:last-child {
     position: absolute;
-    top: 41px;
     left: 458px;
 }
 
