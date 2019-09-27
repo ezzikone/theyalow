@@ -80,31 +80,34 @@ ul{
 
 body {
     width: 1300px;
+    z-index: 1;
 }
 
 header {
     position: relative;
     width: 1300px;
     height: 566px;
+    z-index: 2;
 }
 
 .header-pattern {
     position: absolute;
     height: 100%;
+    z-index: 4;
 }
 
 .header-pattern:after {
-    content: '';
-    display: block;
-    background: url(./resources/image/header-pattern.png) repeat;
-    background-size: 15px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    display: block;
+    background: url(./resources/image/header-pattern.png) repeat;
+    background-size: 15px;
     opacity: .4;
     pointer-events: none;
+    content: '';
 }
 
 .logo-header {
@@ -113,18 +116,21 @@ header {
     left: 140px;
     width: 317px;
     height: 83px;
+    z-index: 5;
 }
 
 .logo {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 7;
 }
 
 .logo-45 {
     position: absolute;
     left: 2px;
     top: 2px;
+    z-index: 6;
 }
 
 .logo-header figcaption {
@@ -139,12 +145,14 @@ header {
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+    z-index: 8;
 }
 
 .menu-container {
     position: relative;
     left: 698px;
     bottom: 20px;
+    z-index: 9;
 }
 
 .menu-container figure:first-child {
@@ -155,6 +163,7 @@ header {
     height: 41px;
     background: #f5c506;
     opacity: .27;
+
 }
 
 .menu-container figure:nth-child(2) {
@@ -171,16 +180,17 @@ header {
     position: absolute;
     top: 8px;
     left: 8px;
-    background: #f5c506;
     width: 453px;
     height: 41px;
+    background: #f5c506;
+    z-index: 10;
 }
 
 .menu ul {
-    height: 100%;
-    width: 100%;
     display: inline-flex;
     justify-content: flex-end;
+    height: 100%;
+    width: 100%;
 }
 
 .menu li{
@@ -195,13 +205,14 @@ header {
 }
 
 .menu a {
-    padding: 0px 21px 0px 23px;
     display: flex;
     align-items: center;
+    padding: 0px 21px 0px 23px;
     width: 100%;
     height: 100%;
     font-size: 17px;
     font-family: "Segoe WP";
+    text-decoration: none;
     color: rgb(155, 125, 8);
     line-height: 1.2;
     transition: all 300ms ease;
@@ -228,6 +239,7 @@ header {
     left: 150px;
     box-shadow: 0 0 5px rgba(0,0,0,.75);
     opacity: .89;
+    z-index: 10;
 }
 
 .title-header {
@@ -236,7 +248,7 @@ header {
     left: 743px;
     width: 401px;
     text-align: center;
-
+    z-index: 10;
 }
 
 .title-header h1:first-child {
@@ -249,11 +261,11 @@ header {
 
 .title-header h1:last-child {
     padding-left: 5px;
+    width: auto;
     color: #ffffff;
     font: normal 63px "Asap";
     letter-spacing: .013em;
     line-height: 1.35;
-    width: auto;
 }
 
 .arrow {
@@ -262,15 +274,17 @@ header {
     left: 0;
     width: 1300px;
     height: 57px;
+    z-index: 11;
 }
 
 .arrow-left {
-    display: block;
     position: relative;
+    display: block;
     float: left;
-    background: #c4a30a;
     width: 32px;
     height: 57px;
+    background: #c4a30a;
+    z-index: 12;
     transition: all 300ms ease;
 }
 
@@ -280,12 +294,13 @@ header {
 }
 
 .arrow-right {
-    display: block;
     position: relative;
+    display: block;
     float: right;
-    background: #c4a30a;
     width: 32px;
     height: 57px;
+    z-index: 12;
+    background: #c4a30a;
     transition: all 300ms ease;
 }
 
@@ -305,10 +320,11 @@ main {
 
 .main-pattern {
     position: absolute;
-    display: inline-block;
     top: 0;
     left: 0;
+    display: inline-block;
     width: 100%;
+    z-index: 4;
 }
 
 .main-pattern figure {
@@ -318,21 +334,22 @@ main {
             0px 20px 16px -20px rgba(0,0,0,0.5),
             0px 20px 16px -20px rgba(0,0,0,0.5);
     opacity: .4;
+    z-index: 5;
 }
 
 .main-pattern figure:after {
-    content: '';
-    display: block;
-    background: url(./resources/image/main-section-pattern.png) repeat;
-    background-size: 6px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    display: block;
+    content: '';
+    background: url(./resources/image/main-section-pattern.png) repeat;
+    background-size: 6px;
     opacity: .16;
     pointer-events: none;
-    z-index: 4;
+    z-index: 5;
 }
 
 .main-section {
@@ -345,13 +362,13 @@ main {
     justify-content: space-around;
     height: 100%;
     margin: auto 139px;
-    z-index: 1;
+    z-index: 6;
 }
 
 .main-section li {
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 7;
 }
 
 .main-section li:nth-child(1) {
@@ -367,20 +384,20 @@ main {
 .main-nav {
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 8;
 }
 
 .main-nav a {
     display: flex;
     height: 100%;
-    border-collapse: collapse;
     justify-content: space-between;
     flex-flow: column;
     align-items: center;
+    border-collapse: collapse;
     text-decoration: none;
     color: #000000;
     transition: all 300ms ease;
-    z-index: 4;
+    z-index: 9;
 }
 
 .main-nav a:hover {
@@ -552,34 +569,35 @@ li:nth-child(3) .main-nav figcaption {
     position: absolute;
     height: 498px;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 
 .responsive-pattern {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 6;
 }
 
 .responsive-pattern figure {
     height: 100%;
     background: #4c4c4c;
+    z-index: 7;
 }
 
 .responsive-pattern:after {
-    content: '';
-    display: block;
-    background: url(./resources/image/responsive-bg-texture.png) repeat;
-    background-size: 15px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    display: block;
+    background: url(./resources/image/responsive-bg-texture.png) repeat;
+    background-size: 15px;
     opacity: .07;
     pointer-events: none;
-    z-index: 4;
+    content: '';
+    z-index: 8;
 }
 
 .responsive h3 {
