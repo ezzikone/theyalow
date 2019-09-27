@@ -195,10 +195,10 @@ nav.menu {
     align-items: center;
     width: 100%;
     height: 100%;
-    font: normal 17px "Segoe WP";
-    font-stretch: 10%;
-    text-decoration: none;
-    color: #9b7d08;
+    font-size: 17px;
+    font-family: "Segoe WP";
+    color: rgb(155, 125, 8);
+    line-height: 1.2;
     transition: all 300ms ease;
 }
 
