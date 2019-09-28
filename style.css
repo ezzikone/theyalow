@@ -71,7 +71,12 @@
     .menu-container figure:first-child,
     .menu-container figure:nth-child(2),
     .title-header,
-    .controls {
+    .controls,
+    .calendar,
+    .materials h3,
+    .scroll,
+    .twitter-body img.plus-twitter,
+    .twitter-body figcaption {
         display: none;
     }
 
@@ -319,47 +324,40 @@
     }
 
     .materials {
-        height: 508px;
+        height: 490px;
         width: 100%;
-        background-image: url(./resources/image/materials-bg.png);
-    }
-
-    .materials h3 {
-        padding: 31px 140px 20px 140px;
-        text-align: left;
-        letter-spacing: .4px;
-        font: normal 37px "PT Sans";
-        color: #ffffff;
+        background: #ffffff;
     }
 
     .materials article {
         float: left;
-        margin: 10px 0 0 140px;
-        width: 341px;
-        height: 312px;
+        padding: 6px 0px 0px 10px;
+        margin-bottom: 8px;
+        width: auto;
+        height: 233px;
         z-index: 15;
     }
 
     .text-section {
         background: #ec9e03;
-        width: 100%;
+        width: 299px;
         height: 233px;
         z-index: 20;
     }
 
     .text-section p {
-        padding: 17px 32px;
-        font: normal 27px "Segoe WP Light";
-        letter-spacing: 1.1px;
-        line-height: 1.4;
-        color: #ffffff;
+        padding: 17px 26px;
+        font-size: 28px;
+        font-family: "Segoe WP Light";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
         z-index: 25;
     }
 
     .text-section img {
         position: relative;
-        bottom: 17px;
-        left: 315px;
+        left: 275px;
+        top: 3px;
         transition: all .75s ease-out;
         z-index: 30;
     }
@@ -369,92 +367,77 @@
         transform: rotate(360deg);
     }
 
-    .calendar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #ddb101;
-        width: 113px;
-        height: 86px;
-    }
-
-    .calendar h2 {
-        font-weight: bold;
-        font-style: normal;
-        font-size: 55px;
-        font-family: "Segoe UI Bold", monospace;
-        height: 56px;
-        margin: 0px 0px -3px 5px;
-        color: #ffffff;
-
-    }
-
-    .calendar p {
-        font: normal 21px "Segoe UI";
-        height: 22px;
-        text-transform: uppercase;
-        color: #b26529;
-        padding: 0px 0px 0px 7px;
-    }
-
     .materials video {
         position: relative;
         float: left;
-        margin: 10px 0px 0px 0px;
+        margin: 7px 0px 0px 8px;
     }
 
     .twitter-body {
         position: relative;
-        float: right;
-        margin: 10px 142px 0 0px;
-        width: 329px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         height: 233px;
-        background: #ec9e03;
+        background: #f5c507;
         z-index: 1;
     }
 
-    .twitter-body figcaption {
-        position: absolute;
-        top: 11px;
-        right: 17px;
-        font: normal 25px "Segoe WP Light";
-        color: #ffffff;
-        z-index: 2;
-    }
-
     .twitter-body img:first-child {
-        position: absolute;
-        top: 59px;
-        left: 83px;
-        z-index: 3;
+        padding: 16px 0 0 84px;
     }
-
-    .twitter-body img.plus-twitter {
-        position: absolute;
-        bottom: 13px;
-        right: 9px;
-        transition: all .75s ease-out;
-        z-index: 4;
-    }
-
-    .twitter-body img.plus-twitter:hover {
-        filter: brightness(1.1);
-        transform: rotate(360deg);
-    }
-
-    .scroll {
-        position: relative;
+    
+    .twitter-feed {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        top: 41px;
-        width: 100%;
+        flex-flow: column;
+        margin: 0 31px 0 0px;
+        height: 100%;
+        width: 284px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
     }
 
-    .scroll img:last-child {
-        position: absolute;
-        left: 458px;
+    .twitter-feed li {
+        width: 284px;
+        height: 42px;
+        text-align: left;
+        background-image: url(./resources/image/twitter-textbg.png);
+    }
+
+    .twitter-feed li span {
+        font-size: 13px;
+        font-family: "IcedEarth";
+        color: rgb(143, 142, 142);
+        line-height: 1.2;
+        text-align: left;
+    }
+
+
+    .twitter-feed .form {
+        width: 270px;
+        height: 29px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, .15);
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+    }
+
+    .form input:first-child {
+        float: left;
+        width: auto;
+        height: 100%;
+    }
+
+    .form input:last-child {
+        float: right;
+        width: 77px;
+        height: 100%;
+        background: linear-gradient(to top, #cf8e0c, #eaa927);
+
     }
 
     .responsive {
@@ -1091,6 +1074,10 @@ ul{
         .twitter-body img.plus-twitter:hover {
             filter: brightness(1.1);
             transform: rotate(360deg);
+        }
+        
+        .twitter-feed {
+            display: none;
         }
 
         .scroll {
