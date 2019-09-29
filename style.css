@@ -64,6 +64,7 @@
         position: relative;
         width: 100%;
         height: 389px;
+        z-index: 10;
     }
 
     .header-pattern,
@@ -98,16 +99,14 @@
         top: 12px;
         width: 40px;
         height: 40px;
-        z-index: 7;
     }
 
     .logo-45 {
         position: absolute;
         left: 13px;
         top: 13px;
-        width: 37.5px;
-        height: 37.5px;
-        z-index: 6;
+        width: 38px;
+        height: 38px;
     }
 
     .logo-header figcaption {
@@ -115,13 +114,13 @@
         top: 8px;
         float: right;
         font-size: 41px;
-        font-family: "Lucida Sans";
+        font-family: "Lucida Sans", serif;
         color: rgb(255, 255, 255);
         font-style: italic;
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
-        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
         -moz-transform: matrix( 0.47695942377377,0,0,0.46987951807229,0,0);
         -webkit-transform: matrix( 0.47695942377377,0,0,0.46987951807229,0,0);
         -ms-transform: matrix( 0.47695942377377,0,0,0.46987951807229,0,0);
@@ -130,7 +129,6 @@
     .menu-container {
         position: relative;
         float: left;
-        z-index: 9;
     }
 
     .menu {
@@ -138,7 +136,6 @@
         width: 454px;
         height: 62px;
         background: #f5c506;
-        z-index: 10;
     }
 
     .menu ul {
@@ -167,7 +164,7 @@
         width: 100%;
         height: 100%;
         font-size: 19px;
-        font-family: "Segoe WP";
+        font-family: "Segoe WP", serif;
         text-decoration: none;
         color: rgb(155, 125, 8);
         line-height: 1.2;
@@ -198,17 +195,17 @@
     }
 
     .player-header {
+        position: relative;
         object-fit: cover;
         width: 100%;
-        box-shadow: 0 0 5px rgba(0, 0, 0, .75);
-        opacity: .89;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .75);
         z-index: 1;
     }
 
     main {
         position: relative;
         height: 1119px;
-        z-index: 0;
+        z-index: 20;
     }
 
     .main-pattern {
@@ -217,14 +214,13 @@
         left: 0;
         display: inline-block;
         width: 100%;
-        z-index: 4;
     }
 
     .main-pattern figure {
+        position: relative;
         height: 174px;
         background: #f7f7f7;
         opacity: .4;
-        z-index: 5;
     }
 
     .main-pattern figure:after {
@@ -239,7 +235,6 @@
         background-size: 6px;
         opacity: .16;
         pointer-events: none;
-        z-index: 5;
     }
 
     .main-section {
@@ -248,30 +243,20 @@
     }
 
     .main-section ul {
+        position: relative;
         display: flex;
         justify-content: space-around;
         height: 100%;
-        z-index: 6;
     }
 
     .main-section li {
         width: 100%;
         height: 100%;
-        z-index: 7;
-    }
-
-    .main-section li:nth-child(1) {
-        border-right: 1px solid rgba(0, 0, 0, .14);
-    }
-
-    .main-section li:nth-child(3) {
-        border-left: 1px solid rgba(0, 0, 0, .14);
     }
 
     .main-nav {
         width: 100%;
         height: 100%;
-        z-index: 8;
     }
 
     .main-nav a {
@@ -282,7 +267,6 @@
         align-items: center;
         text-decoration: none;
         color: #000000;
-        z-index: 9;
     }
 
     .main-nav a:hover {
@@ -296,7 +280,7 @@
     }
 
     li:nth-child(2) .main-nav img {
-        padding: 27px 0px 0 17px;
+        padding: 27px 0 0 17px;
         height: 67px;
     }
 
@@ -307,7 +291,7 @@
 
     .main-nav figcaption {
         font-size: 23px;
-        font-family: "Segoe UI";
+        font-family: "Segoe UI Light", serif;
         color: rgb(0, 0, 0);
     }
 
@@ -316,11 +300,11 @@
     }
 
     li:nth-child(2) .main-nav figcaption {
-        padding: 0px 0px 27px 18px;
+        padding: 0 0 27px 18px;
     }
 
     li:nth-child(3) .main-nav figcaption {
-        padding: 0 0px 27px 3px;
+        padding: 0 0 27px 3px;
     }
 
     .materials {
@@ -331,27 +315,24 @@
 
     .materials article {
         float: left;
-        padding: 6px 0px 0px 10px;
+        padding: 6px 0 0 10px;
         margin-bottom: 8px;
         width: auto;
         height: 233px;
-        z-index: 15;
     }
 
     .text-section {
         background: #ec9e03;
         width: 299px;
         height: 233px;
-        z-index: 20;
     }
 
     .text-section p {
         padding: 17px 26px;
         font-size: 28px;
-        font-family: "Segoe WP Light";
+        font-family: "Segoe WP Light", serif;
         color: rgb(255, 255, 255);
         line-height: 1.2;
-        z-index: 25;
     }
 
     .text-section img {
@@ -359,7 +340,6 @@
         left: 275px;
         top: 3px;
         transition: all .75s ease-out;
-        z-index: 30;
     }
 
     .text-section img:hover {
@@ -370,7 +350,7 @@
     .materials video {
         position: relative;
         float: left;
-        margin: 7px 0px 0px 8px;
+        margin: 7px 0 0 8px;
     }
 
     .twitter-body {
@@ -382,7 +362,6 @@
         width: 100%;
         height: 233px;
         background: #f5c507;
-        z-index: 1;
     }
 
     .twitter-body img:first-child {
@@ -392,7 +371,7 @@
     .twitter-feed {
         display: flex;
         flex-flow: column;
-        margin: 0 31px 0 0px;
+        margin-right: 31px;
         height: 100%;
         width: 284px;
         justify-content: flex-end;
@@ -414,7 +393,7 @@
 
     .twitter-feed li span {
         font-size: 13px;
-        font-family: "Segoe WP";
+        font-family: "Segoe WP", serif;
         font-style: normal;
         color: rgb(143, 142, 142);
         line-height: 1.2;
@@ -445,7 +424,7 @@
         margin: 0;
         -webkit-appearance: none;
         outline: none;
-        box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+        box-shadow: inset 0 5px 5px 0 rgba(0, 0, 0, 0.11);
 
     }
 
@@ -477,19 +456,16 @@
 
     .responsive h3 {
         position: relative;
-        padding: 30px 9px 0px 0px;
+        padding: 30px 9px 0 0;
         text-align: center;
-        letter-spacing: 0.4px;
         font: normal 39px "Open Sans";
         color: #f5c506;
-        z-index: 5;
     }
 
     .responsive article {
         position: relative;
         height: 303px;
-        margin: 31px 0px 0 27px;
-        z-index: 6;
+        margin: 31px 0 0 27px;
         color: #f5c506;
     }
 
@@ -517,14 +493,13 @@
     .responsive-materials figcaption {
         padding-top: 2px;
         text-align: center;
-        letter-spacing: .4px;
         font: 18px "PT Sans Narrow";
         font-weight: bold;
         color: #ffffff;
     }
 
     .responsive-materials img {
-        padding: 45px 5px 0px 20px;
+        padding: 45px 5px 0 20px;
     }
 
     .responsive-materials img.tablet,
@@ -533,11 +508,12 @@
     }
 
     footer {
+        position: relative;
         width: 100%;
         height: 44px;
         background: #4c4c4c;
         box-shadow: 0 -3px 15px 0 #000000;
-        z-index: 10;
+        z-index: 30;
     }
 
     .logo-container-footer {
@@ -551,7 +527,6 @@
         top: 8px;
         width: 31px;
         height: 31px;
-        z-index: 7;
     }
 
     .logo-container-footer .logo-45 {
@@ -560,7 +535,6 @@
         top: 9px;
         width: 29px;
         height: 29px;
-        z-index: 6;
     }
 
     .logo-container-footer figcaption {
@@ -568,13 +542,13 @@
         top: 15px;
         left: 106px;
         font-size: 16px;
-        font-family: "Lucida Sans";
+        font-family: "Lucida Sans", serif;
         color: rgb(255, 255, 255);
         font-style: italic;
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
-        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
     }
 
 }
@@ -606,21 +580,19 @@ list-style-type: none;
 
     body {
         width: 100%;
-        z-index: 1;
     }
 
     header {
         position: relative;
         width: 100%;
         height: 566px;
-        z-index: 2;
+        z-index: 1;
     }
 
     .header-pattern {
         position: absolute;
         height: 100%;
         width: 100%;
-        z-index: 4;
     }
 
     .header-pattern img {
@@ -648,21 +620,18 @@ list-style-type: none;
         left: 140px;
         width: 317px;
         height: 83px;
-        z-index: 5;
     }
 
     .logo {
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 7;
     }
 
     .logo-45 {
         position: absolute;
         left: 2px;
         top: 2px;
-        z-index: 6;
     }
 
     .logo-header figcaption {
@@ -670,21 +639,19 @@ list-style-type: none;
         right: 7px;
         top: 23px;
         font-size: 41px;
-        font-family: "Lucida Sans";
+        font-family: "Lucida Sans", serif;
         color: rgb(255, 255, 255);
         font-style: italic;
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
-        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
-        z-index: 8;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
     }
 
     .menu-container {
         position: relative;
         left: 698px;
         bottom: 20px;
-        z-index: 9;
     }
 
     .menu-container figure:first-child {
@@ -715,7 +682,6 @@ list-style-type: none;
         width: 453px;
         height: 41px;
         background: #f5c506;
-        z-index: 10;
     }
 
     .menu ul {
@@ -739,11 +705,11 @@ list-style-type: none;
     .menu a {
         display: flex;
         align-items: center;
-        padding: 0px 21px 0px 23px;
+        padding: 0 21px 0 23px;
         width: 100%;
         height: 100%;
         font-size: 17px;
-        font-family: "Segoe WP";
+        font-family: "Segoe WP", serif;
         text-decoration: none;
         color: rgb(155, 125, 8);
         line-height: 1.2;
@@ -757,7 +723,7 @@ list-style-type: none;
     }
 
     .menu li:first-child a {
-        padding: 0px 23px 0px 50px;
+        padding: 0 23px 0 50px;
     }
 
     .menu img {
@@ -771,7 +737,6 @@ list-style-type: none;
         left: 150px;
         box-shadow: 0 0 5px rgba(0, 0, 0, .75);
         opacity: .89;
-        z-index: 10;
     }
 
     .title-header {
@@ -780,7 +745,6 @@ list-style-type: none;
         left: 743px;
         width: 401px;
         text-align: center;
-        z-index: 10;
     }
 
     .title-header h1:first-child {
@@ -806,7 +770,6 @@ list-style-type: none;
         left: 0;
         width: 100%;
         height: 57px;
-        z-index: 11;
     }
 
     .arrow-left {
@@ -816,7 +779,6 @@ list-style-type: none;
         width: 32px;
         height: 57px;
         background: #c4a30a;
-        z-index: 12;
         transition: all 300ms ease;
     }
 
@@ -831,7 +793,6 @@ list-style-type: none;
         float: right;
         width: 32px;
         height: 57px;
-        z-index: 12;
         background: #c4a30a;
         transition: all 300ms ease;
     }
@@ -847,7 +808,7 @@ list-style-type: none;
     main {
         position: relative;
         height: 1217px;
-        z-index: 0;
+        z-index: 2;
     }
 
     .main-pattern {
@@ -856,16 +817,15 @@ list-style-type: none;
         left: 0;
         display: inline-block;
         width: 100%;
-        z-index: 4;
     }
 
     .main-pattern figure {
+        position: relative;
         height: 213px;
         background: #f7f7f7;
-        box-shadow: 0px 20px 16px -20px rgba(0, 0, 0, 0.5),
-        0px 20px 16px -20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 20px 16px -20px rgba(0, 0, 0, 0.5),
+        0 20px 16px -20px rgba(0, 0, 0, 0.5);
         opacity: .4;
-        z-index: 5;
     }
 
     .main-pattern figure:after {
@@ -880,26 +840,25 @@ list-style-type: none;
         background-size: 6px;
         opacity: .16;
         pointer-events: none;
-        z-index: 5;
     }
 
     .main-section {
+        position: relative;
         height: 213px;
         width: 100%;
     }
 
     .main-section ul {
+        position: relative;
         display: flex;
         justify-content: space-around;
         height: 100%;
         margin: auto 139px;
-        z-index: 6;
     }
 
     .main-section li {
         width: 100%;
         height: 100%;
-        z-index: 7;
     }
 
     .main-section li:nth-child(1) {
@@ -915,7 +874,6 @@ list-style-type: none;
     .main-nav {
         width: 100%;
         height: 100%;
-        z-index: 8;
     }
 
     .main-nav a {
@@ -928,7 +886,6 @@ list-style-type: none;
         text-decoration: none;
         color: #000000;
         transition: all 300ms ease;
-        z-index: 9;
     }
 
     .main-nav a:hover {
@@ -941,7 +898,7 @@ list-style-type: none;
     }
 
     li:nth-child(2) .main-nav img {
-        padding: 37px 0px 0 27px;
+        padding: 37px 0 0 27px;
     }
 
     li:nth-child(3) .main-nav img {
@@ -950,11 +907,11 @@ list-style-type: none;
 
     .main-nav figcaption {
         font: normal 27px "Segoe UI Light";
-        padding: 0px 0px 33px 19px;
+        padding: 0 0 33px 19px;
     }
 
     li:nth-child(3) .main-nav figcaption {
-        padding: 0 16px 31px 0px;
+        padding: 0 16px 31px 0;
     }
 
     .materials {
@@ -966,7 +923,6 @@ list-style-type: none;
     .materials h3 {
         padding: 31px 140px 20px 140px;
         text-align: left;
-        letter-spacing: .4px;
         font: normal 37px "PT Sans";
         color: #ffffff;
     }
@@ -976,23 +932,19 @@ list-style-type: none;
         margin: 10px 0 0 140px;
         width: 341px;
         height: 312px;
-        z-index: 15;
     }
 
     .text-section {
         background: #ec9e03;
         width: 100%;
         height: 233px;
-        z-index: 20;
     }
 
     .text-section p {
         padding: 17px 32px;
         font: normal 27px "Segoe WP Light";
-        letter-spacing: 1.1px;
         line-height: 1.4;
         color: #ffffff;
-        z-index: 25;
     }
 
     .text-section img {
@@ -1000,7 +952,6 @@ list-style-type: none;
         bottom: 17px;
         left: 315px;
         transition: all .75s ease-out;
-        z-index: 30;
     }
 
     .text-section img:hover {
@@ -1023,7 +974,7 @@ list-style-type: none;
         font-size: 55px;
         font-family: "Segoe UI Bold", monospace;
         height: 56px;
-        margin: 0px 0px -3px 5px;
+        margin: 0 0 -3px 5px;
         color: #ffffff;
 
     }
@@ -1033,23 +984,22 @@ list-style-type: none;
         height: 22px;
         text-transform: uppercase;
         color: #b26529;
-        padding: 0px 0px 0px 7px;
+        padding-left: 7px;
     }
 
     .materials video {
         position: relative;
         float: left;
-        margin: 10px 0px 0px 0px;
+        margin-top: 10px;
     }
 
     .twitter-body {
         position: relative;
         float: right;
-        margin: 10px 142px 0 0px;
+        margin: 10px 142px 0 0;
         width: 329px;
         height: 233px;
         background: #ec9e03;
-        z-index: 1;
     }
 
     .twitter-body figcaption {
@@ -1058,14 +1008,12 @@ list-style-type: none;
         right: 17px;
         font: normal 25px "Segoe WP Light";
         color: #ffffff;
-        z-index: 2;
     }
 
     .twitter-body img:first-child {
         position: absolute;
         top: 59px;
         left: 83px;
-        z-index: 3;
     }
 
     .twitter-body img.plus-twitter {
@@ -1073,7 +1021,6 @@ list-style-type: none;
         bottom: 13px;
         right: 9px;
         transition: all .75s ease-out;
-        z-index: 4;
     }
 
     .twitter-body img.plus-twitter:hover {
@@ -1104,20 +1051,17 @@ list-style-type: none;
         position: absolute;
         height: 498px;
         width: 100%;
-        z-index: 5;
     }
 
     .responsive-pattern {
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 6;
     }
 
     .responsive-pattern figure {
         height: 100%;
         background: #4c4c4c;
-        z-index: 7;
     }
 
     .responsive-pattern:after {
@@ -1132,24 +1076,20 @@ list-style-type: none;
         opacity: .07;
         pointer-events: none;
         content: '';
-        z-index: 8;
     }
 
     .responsive h3 {
         position: relative;
-        padding: 34px 0px 0px 7px;
+        padding: 34px 0 0 7px;
         text-align: center;
-        letter-spacing: .4px;
         font: normal 43px "PT Sans";
         color: #f5c506;
-        z-index: 5;
     }
 
     .responsive article {
         position: relative;
         height: 303px;
         margin: 0 138px;
-        z-index: 6;
         color: #f5c506;
     }
 
@@ -1176,14 +1116,13 @@ list-style-type: none;
     .responsive-materials figcaption {
         padding-top: 2px;
         text-align: center;
-        letter-spacing: .4px;
         font: 18px "PT Sans Narrow";
         font-weight: bold;
         color: #ffffff;
     }
 
     .responsive-materials img {
-        padding: 45px 5px 0px 20px;
+        padding: 45px 5px 0 20px;
     }
 
     .responsive-materials img.tablet,
@@ -1207,16 +1146,17 @@ list-style-type: none;
     .list-responsive li {
         overflow-wrap: break-word;
         padding-top: 15px;
-        margin-left: 0px;
+        margin-left: 0;
         color: #ffffff;
     }
 
     footer {
+        z-index: 3;
+        position: relative;
         width: 100%;
         height: 64px;
         background: #4c4c4c;
         box-shadow: 0 -3px 15px 0 #000000;
-        z-index: 10;
     }
 
     .logo-container-footer {
@@ -1230,12 +1170,12 @@ list-style-type: none;
         top: 10px;
         left: 61px;
         font-size: 29px;
-        font-family: "Lucida Sans";
+        font-family: "Lucida Sans", serif;
         color: rgb(255, 255, 255);
         font-style: italic;
         text-transform: uppercase;
         line-height: 1.2;
-        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
     }
 
 }
