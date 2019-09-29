@@ -76,7 +76,9 @@
     .materials h3,
     .scroll,
     .twitter-body img.plus-twitter,
-    .twitter-body figcaption {
+    .twitter-body figcaption,
+    .responsive-pattern,
+    .list-responsive {
         display: none;
     }
 
@@ -205,7 +207,7 @@
 
     main {
         position: relative;
-        height: 1217px;
+        height: 1119px;
         z-index: 0;
     }
 
@@ -324,7 +326,7 @@
     }
 
     .materials {
-        height: 490px;
+        height: 480px;
         width: 100%;
         background: #ffffff;
     }
@@ -395,92 +397,92 @@
         margin: 0 31px 0 0px;
         height: 100%;
         width: 284px;
-        justify-content: space-around;
+        justify-content: flex-end;
         flex-wrap: nowrap;
     }
 
     .twitter-feed li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-left: 27px;
         width: 284px;
         height: 42px;
         text-align: left;
         background-image: url(./resources/image/twitter-textbg.png);
+        background-repeat: no-repeat;
     }
 
     .twitter-feed li span {
         font-size: 13px;
-        font-family: "IcedEarth";
+        font-family: "Segoe WP";
+        font-style: normal;
         color: rgb(143, 142, 142);
         line-height: 1.2;
         text-align: left;
     }
 
-
     .twitter-feed .form {
-        width: 270px;
-        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 32px;
+        width: 271px;
+        overflow: hidden;
+        padding-left: 0;
+        margin-left: 11px;
+        background-image: none;
         border-style: solid;
         border-width: 1px;
         border-color: rgba(0, 0, 0, .15);
-        border-radius: 10px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+        border-radius: 15px;
     }
 
-    .form input:first-child {
+    .form input {
         float: left;
-        width: auto;
-        height: 100%;
+        border: none;
+        height: 30px;
+        width: 203px;
+        margin: 0;
+        -webkit-appearance: none;
+        outline: none;
+        box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+
     }
 
-    .form input:last-child {
-        float: right;
-        width: 77px;
-        height: 100%;
+    .form button {
+        position: relative;
         background: linear-gradient(to top, #cf8e0c, #eaa927);
+        float: left;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 70px;
+        height: 100%;
+        color: #ffffff;
+        font: normal 15px "Segoe UI";
+        text-align: center;
+        transition: all .75s ease-out;
+    }
 
+    .form button:hover {
+        background: linear-gradient(to bottom, #cf8e0c, #eaa927);
     }
 
     .responsive {
         position: absolute;
-        height: 498px;
+        height: 466px;
         width: 100%;
-        z-index: 5;
-    }
-
-    .responsive-pattern {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 6;
-    }
-
-    .responsive-pattern figure {
-        height: 100%;
         background: #4c4c4c;
-        z-index: 7;
-    }
-
-    .responsive-pattern:after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: block;
-        background: url(./resources/image/responsive-bg-texture.png) repeat;
-        background-size: 15px;
-        opacity: .07;
-        pointer-events: none;
-        content: '';
-        z-index: 8;
     }
 
     .responsive h3 {
         position: relative;
-        padding: 34px 0px 0px 7px;
+        padding: 30px 9px 0px 0px;
         text-align: center;
-        letter-spacing: .4px;
-        font: normal 43px "PT Sans";
+        letter-spacing: 0.4px;
+        font: normal 39px "Open Sans";
         color: #f5c506;
         z-index: 5;
     }
@@ -488,7 +490,7 @@
     .responsive article {
         position: relative;
         height: 303px;
-        margin: 0 138px;
+        margin: 31px 0px 0 27px;
         z-index: 6;
         color: #f5c506;
     }
@@ -496,6 +498,7 @@
     .responsive-materials {
         display: flex;
         float: left;
+        width: 586px;
         justify-content: center;
         align-items: flex-end;
     }
@@ -529,26 +532,6 @@
     .responsive-materials img.tablet,
     .responsive-materials img.mobile {
         padding-bottom: 39px;
-    }
-
-    .list-responsive {
-        position: relative;
-        top: 8px;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-end;
-        height: 100%;
-        font: normal 22px "Open Sans";
-        width: 352px;
-        float: right;
-        list-style-image: url(./resources/image/Ellipse.png);
-    }
-
-    .list-responsive li {
-        overflow-wrap: break-word;
-        padding-top: 15px;
-        margin-left: 0px;
-        color: #ffffff;
     }
 
     footer {
