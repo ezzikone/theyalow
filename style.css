@@ -391,6 +391,14 @@
         background-repeat: no-repeat;
     }
 
+    .twitter-feed li:nth-child(2) {
+        opacity: .7;
+    }
+
+    .twitter-feed li:nth-child(3) {
+        opacity: .6
+    }
+
     .twitter-feed li span {
         font-size: 13px;
         font-family: "Segoe WP", serif;
@@ -1140,7 +1148,7 @@ list-style-type: none;
         font: normal 22px "Open Sans";
         width: 352px;
         float: right;
-        list-style-image: url(./resources/image/Ellipse.png);
+        list-style-image: url(./resources/image/Ellipse.svg);
     }
 
     .list-responsive li {
